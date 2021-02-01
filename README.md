@@ -19,4 +19,4 @@ tail = true
 label = %output%
 ```
 ## Example
-![polymetals](example.png)
+![polymetals](screenshots/example.png)
