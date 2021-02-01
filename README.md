@@ -18,3 +18,5 @@ exec = ~/.config/polybar/scripts/polymetals/polymetals.py -s -g -p
 tail = true
 label = %output%
 ```
+## Example
+![polymetals](example.png)
