@@ -24,12 +24,18 @@ def platinum():
     output = str(round(price, roundBy))
     return output
 
+def copper()
+    price = si.get_live_price("HG=F")
+    output = str(round(price, roundBy))
+    return output
+
 def displayArgs():
     #Args to display
     parser = argparse.ArgumentParser()
-    parser.add_argument( "-s", '--silver', help='display the price of silver.', action="store_true")
-    parser.add_argument("-g", '--gold', help='display the price of gold.', action="store_true")
-    parser.add_argument("-p", '--platinum', help='display the price of platinum.', action="store_true")
+    parser.add_argument("-s", '--silver', help='display the price of silver (in troy ounces).', action="store_true")
+    parser.add_argument("-g", '--gold', help='display the price of gold (in troy ounces).', action="store_true")
+    parser.add_argument("-p", '--platinum', help='display the price of platinum (in troy ounces).', action="store_true")
+    parser.add_argument("-c", '--copper', help='display the price of copper (in pounds).', action="store_true")
     args = parser.parse_args()
     metal = ""
     
@@ -40,7 +46,9 @@ def displayArgs():
         metal += "Au: $" + gold() + "/oz | "
     if args.platinum:
         metal += "Pt: $" + platinum() + "/oz | "
-
+    if args.copper:
+        metal += "Cu: $" + copper() + "/lb | "
+        
     #Display the args (if they exist)
     if metal == "":
         print("No metal chosen to display!")
