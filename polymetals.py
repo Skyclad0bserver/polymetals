@@ -24,7 +24,7 @@ def platinum():
     output = str(round(price, roundBy))
     return output
 
-def copper()
+def copper():
     price = si.get_live_price("HG=F")
     output = str(round(price, roundBy))
     return output
