@@ -1,5 +1,5 @@
 # polymetals
-Custom polybar script that displays the price of silver, gold, platinum, and/or copper.
+Custom polybar script that displays the price of silver, gold, platinum, palladium, and/or copper.
 
 ## Python Modules Needed
 * 'pandas'
@@ -15,7 +15,8 @@ type = custom/script
 ; -g or --gold to display Gold
 ; -p or --platinum to display Platinum
 ; -c or --copper to display Copper
-exec = ~/.config/polybar/scripts/polymetals/polymetals.py -s -g -p
+; -a or --palladium to display Palladium
+exec = ~/.config/polybar/scripts/polymetals/polymetals.py -a -c -p
 tail = true
 label = %output%
 ```
