@@ -21,3 +21,10 @@ label = %output%
 ```
 ## Example
 ![polymetals](screenshots/example.png)
+
+## How to Use
+1. Download needed polybar modules.
+2. Download polymetals
+3. Extract polymetals to your polybar folder, or your folder for polybar scripts.
+4. Make polymetals.py executable.
+5. Add the module to your polybar config, making sure the path is correct.
